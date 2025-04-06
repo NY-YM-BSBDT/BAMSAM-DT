@@ -68,7 +68,7 @@ async def play_music(vc, ctx):
 
 # 🎧 음악 재생 명령어
 @bot.command(name="p")
-async def play_music(ctx, *, url):
+async def play_music_command(ctx, *, url):
     if not ctx.author.voice:
         return await ctx.send("❗ 먼저 음성 채널에 들어가 주세요.")
 
